@@ -1,0 +1,22 @@
+//- ======================================
+//- bs & jquery
+//- ======================================
+//- script(src='js/jquery-1.11.2.min.js', type='text/javascript')
+//- script(src='js/bootstrap.min.js', type='text/javascript')
+//- production
+//- script(src='js/vue-2.6.12.min.js', type='text/javascript')
+//- test
+//-script(src='https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js', type='text/javascript')
+
+- if (module === 'index' || module === 'pdt-detail' )
+    //- 只有 index, pdt-detail 載入
+    //-script(defer type='text/javascript', src='js/slick.min.js')
+
+//- ======================================
+// 全站共用
+//- ======================================
+script(src='js/all.js', type='text/javascript')
+
+- if (module === 'pdt-detail' )
+    // 只有 pdt-detail 載入
+    //- script(src='js/slick.min.js', type='text/javascript')
